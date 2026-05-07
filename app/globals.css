@@ -332,8 +332,8 @@ img {
   border-radius: 12px;
   background: rgba(0, 62, 199, 0.08);
   color: var(--primary);
-  font-size: 22px;
-  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
 }
 
 .info-card h3,
@@ -391,14 +391,28 @@ img {
 }
 
 .steps-grid {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 28px;
   align-items: start;
 }
 
+.steps-grid::before {
+  content: '';
+  position: absolute;
+  left: calc(16.666% + 12px);
+  right: calc(16.666% + 12px);
+  top: 31px;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(0, 62, 199, 0.15) 0%, rgba(186, 26, 26, 0.15) 100%);
+  z-index: 0;
+}
+
 .step-card {
+  position: relative;
   text-align: center;
+  z-index: 1;
 }
 
 .step-number {
@@ -414,13 +428,6 @@ img {
   font-size: 24px;
   font-weight: 700;
   box-shadow: var(--shadow);
-}
-
-.step-line {
-  height: 2px;
-  width: 100%;
-  margin: -50px 0 36px;
-  background: linear-gradient(90deg, rgba(0, 62, 199, 0.15) 0%, rgba(186, 26, 26, 0.15) 100%);
 }
 
 .asset-card {
@@ -528,7 +535,7 @@ img {
     min-height: 360px;
   }
 
-  .step-line {
+  .steps-grid::before {
     display: none;
   }
 }

@@ -1,4 +1,4 @@
-const patientDownloadUrl = 'https://www.dropbox.com/scl/fi/q0klc393emeaeiykag9at/patient_app.apk?rlkey=iotfmpjpvlc256ov4iwfw7qab&st=tl6weqed&dl=1';
+const patientDownloadUrl = 'https://www.dropbox.com/scl/fi/nycjld7nz7mngq1pc72sz/patient_app.apk?rlkey=rp8bualbxg5yeknlbma0rgmbi&st=6dbvkbwt&dl=1';
 const mobileDownloadUrl = 'https://www.dropbox.com/scl/fi/wnt8kfpbr2uuuqte5ar06/mobile_app.apk?rlkey=wu2xd4pqgbdlxk02jl1e820qy&st=ty4kjkmc&dl=1';
 
 export default function HomePage() {
@@ -47,11 +47,9 @@ export default function HomePage() {
                 href={patientDownloadUrl}
                 style={{ backgroundColor: '#003ec7', color: '#ffffff' }}
               >
-                <span></span>
                 Télécharger l&apos;app patient
               </a>
               <a className="secondary-button" href={mobileDownloadUrl}>
-                <span></span>
                 Télécharger l&apos;app mobile
               </a>
             </div>
@@ -78,7 +76,7 @@ export default function HomePage() {
 
           <div className="three-grid">
             <article className="info-card">
-              <div className="icon-box">?</div>
+              <div className="icon-box" aria-hidden="true">🚑</div>
               <h3>Dispatch intelligent</h3>
               <p>
                 Répartition plus rapide des missions vers les bonnes équipes selon
@@ -87,7 +85,7 @@ export default function HomePage() {
             </article>
 
             <article className="info-card">
-              <div className="icon-box">?</div>
+              <div className="icon-box" aria-hidden="true">📍</div>
               <h3>Suivi en temps réel</h3>
               <p>
                 Visualisez les ambulances, les missions en cours et l&apos;avancement
@@ -96,7 +94,7 @@ export default function HomePage() {
             </article>
 
             <article className="info-card">
-              <div className="icon-box">!</div>
+              <div className="icon-box" aria-hidden="true">🚨</div>
               <h3>Alertes d&apos;urgence</h3>
               <p>
                 Recevez rapidement les informations importantes pour mieux réagir
@@ -120,7 +118,7 @@ export default function HomePage() {
           <div className="three-grid ecosystem-grid">
             <article className="ecosystem-card">
               <div className="corner-glow" />
-              <div className="ecosystem-icon">?</div>
+              <div className="ecosystem-icon" aria-hidden="true">📱</div>
               <h3>Najda</h3>
               <p>
                 L&apos;application patient pour demander une ambulance, envoyer sa
@@ -134,7 +132,7 @@ export default function HomePage() {
 
             <article className="ecosystem-card ecosystem-card-featured">
               <div className="corner-glow" />
-              <div className="ecosystem-icon">?</div>
+              <div className="ecosystem-icon" aria-hidden="true">🚑</div>
               <h3>AmbuLink Mobile</h3>
               <p>
                 L&apos;application des équipes terrain pour recevoir les missions,
@@ -148,7 +146,7 @@ export default function HomePage() {
 
             <article className="ecosystem-card">
               <div className="corner-glow" />
-              <div className="ecosystem-icon">?</div>
+              <div className="ecosystem-icon" aria-hidden="true">🏥</div>
               <h3>Clinic App</h3>
               <p>
                 L&apos;application clinique pour suivre les demandes, coordonner les
@@ -172,7 +170,6 @@ export default function HomePage() {
           <div className="steps-grid">
             <article className="step-card">
               <div className="step-number">1</div>
-              <div className="step-line" />
               <h3>Le patient demande de l&apos;aide</h3>
               <p>
                 La demande part depuis Najda avec les informations essentielles et
@@ -182,7 +179,6 @@ export default function HomePage() {
 
             <article className="step-card">
               <div className="step-number">2</div>
-              <div className="step-line" />
               <h3>L&apos;équipe reçoit la mission</h3>
               <p>
                 AmbuLink Mobile transmet la mission, le suivi terrain et l&apos;état
@@ -206,25 +202,25 @@ export default function HomePage() {
         <div className="container">
           <div className="four-grid">
             <article className="asset-card">
-              <div className="asset-icon">?</div>
+              <div className="asset-icon" aria-hidden="true">📋</div>
               <h3>Gestion des missions</h3>
               <p>Suivi complet des missions du début à la fin.</p>
             </article>
 
             <article className="asset-card">
-              <div className="asset-icon">?</div>
+              <div className="asset-icon" aria-hidden="true">👥</div>
               <h3>Gestion du personnel</h3>
               <p>Suivi des équipes, des plannings et de l&apos;organisation interne.</p>
             </article>
 
             <article className="asset-card">
-              <div className="asset-icon">?</div>
+              <div className="asset-icon" aria-hidden="true">📊</div>
               <h3>Statistiques &amp; rapports</h3>
               <p>Des tableaux de bord plus clairs pour piloter l&apos;activité.</p>
             </article>
 
             <article className="asset-card">
-              <div className="asset-icon">?</div>
+              <div className="asset-icon" aria-hidden="true">🛠️</div>
               <h3>Maintenance de flotte</h3>
               <p>Suivi des véhicules, des entretiens et des coûts de maintenance.</p>
             </article>
@@ -304,4 +300,3 @@ export default function HomePage() {
     </main>
   );
 }
-
