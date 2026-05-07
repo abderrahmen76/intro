@@ -1,4 +1,4 @@
-﻿const patientDownloadUrl = 'https://www.dropbox.com/scl/fi/ebxufqblsffwnfxua5rln/patient_app.apk?rlkey=4cty4bmly95iopj21f67vinm2&st=q7bkok72&dl=1';
+const patientDownloadUrl = 'https://www.dropbox.com/scl/fi/lyzpevt9dagmwmftkka5t/patient_app.apk?rlkey=xuwuk3kdkw9qicnjgzq45uu5s&st=ihchc4z7&dl=1';
 const mobileDownloadUrl = 'https://www.dropbox.com/scl/fi/hxafhdhv65je47cjcruth/mobile_app.apk?rlkey=0h3ma6njhwxq96spoi6kufduu&st=1q9b8icf&dl=1';
 
 export default function HomePage() {
@@ -42,12 +42,16 @@ export default function HomePage() {
             </p>
 
             <div className="hero-actions">
-              <a className="primary-button" href={patientDownloadUrl}>
-                <span>↓</span>
+              <a
+                className="primary-button"
+                href={patientDownloadUrl}
+                style={{ backgroundColor: '#003ec7', color: '#ffffff' }}
+              >
+                <span>?</span>
                 Télécharger l&apos;app patient
               </a>
               <a className="secondary-button" href={mobileDownloadUrl}>
-                <span>✓</span>
+                <span>?</span>
                 Télécharger l&apos;app mobile
               </a>
             </div>
@@ -55,7 +59,11 @@ export default function HomePage() {
 
           <div className="hero-visual">
             <div className="hero-logo-card">
-              <img className="hero-logo" src="/logo.png" alt="Logo AmbuLink" />
+              <img
+                className="hero-logo"
+                src="/hero-logo.png"
+                alt="Visuel principal AmbuLink"
+              />
             </div>
           </div>
         </div>
@@ -70,7 +78,7 @@ export default function HomePage() {
 
           <div className="three-grid">
             <article className="info-card">
-              <div className="icon-box">⌁</div>
+              <div className="icon-box">?</div>
               <h3>Dispatch intelligent</h3>
               <p>
                 Répartition plus rapide des missions vers les bonnes équipes selon
@@ -79,7 +87,7 @@ export default function HomePage() {
             </article>
 
             <article className="info-card">
-              <div className="icon-box">◉</div>
+              <div className="icon-box">?</div>
               <h3>Suivi en temps réel</h3>
               <p>
                 Visualisez les ambulances, les missions en cours et l&apos;avancement
@@ -112,7 +120,7 @@ export default function HomePage() {
           <div className="three-grid ecosystem-grid">
             <article className="ecosystem-card">
               <div className="corner-glow" />
-              <div className="ecosystem-icon">⌖</div>
+              <div className="ecosystem-icon">?</div>
               <h3>Najda</h3>
               <p>
                 L&apos;application patient pour demander une ambulance, envoyer sa
@@ -126,7 +134,7 @@ export default function HomePage() {
 
             <article className="ecosystem-card ecosystem-card-featured">
               <div className="corner-glow" />
-              <div className="ecosystem-icon">✓</div>
+              <div className="ecosystem-icon">?</div>
               <h3>AmbuLink Mobile</h3>
               <p>
                 L&apos;application des équipes terrain pour recevoir les missions,
@@ -140,7 +148,7 @@ export default function HomePage() {
 
             <article className="ecosystem-card">
               <div className="corner-glow" />
-              <div className="ecosystem-icon">⌁</div>
+              <div className="ecosystem-icon">?</div>
               <h3>Clinic App</h3>
               <p>
                 L&apos;application clinique pour suivre les demandes, coordonner les
@@ -198,25 +206,25 @@ export default function HomePage() {
         <div className="container">
           <div className="four-grid">
             <article className="asset-card">
-              <div className="asset-icon">▣</div>
+              <div className="asset-icon">?</div>
               <h3>Gestion des missions</h3>
               <p>Suivi complet des missions du début à la fin.</p>
             </article>
 
             <article className="asset-card">
-              <div className="asset-icon">⋯</div>
+              <div className="asset-icon">?</div>
               <h3>Gestion du personnel</h3>
               <p>Suivi des équipes, des plannings et de l&apos;organisation interne.</p>
             </article>
 
             <article className="asset-card">
-              <div className="asset-icon">⌘</div>
+              <div className="asset-icon">?</div>
               <h3>Statistiques &amp; rapports</h3>
               <p>Des tableaux de bord plus clairs pour piloter l&apos;activité.</p>
             </article>
 
             <article className="asset-card">
-              <div className="asset-icon">△</div>
+              <div className="asset-icon">?</div>
               <h3>Maintenance de flotte</h3>
               <p>Suivi des véhicules, des entretiens et des coûts de maintenance.</p>
             </article>
@@ -234,7 +242,11 @@ export default function HomePage() {
             </p>
 
             <div className="hero-actions centered-actions">
-              <a className="primary-button" href={patientDownloadUrl}>
+              <a
+                className="primary-button"
+                href={patientDownloadUrl}
+                style={{ backgroundColor: '#003ec7', color: '#ffffff' }}
+              >
                 Télécharger l&apos;app patient
               </a>
               <a className="secondary-button" href={mobileDownloadUrl}>
@@ -292,3 +304,4 @@ export default function HomePage() {
     </main>
   );
 }
+

@@ -104,29 +104,35 @@ img {
   font-weight: 700;
   transition: 180ms ease;
   text-align: center;
+  border: 1px solid transparent;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
 .header-cta,
 .primary-button {
-  background: var(--primary);
-  color: #fff;
+  background-color: var(--primary);
+  color: #ffffff !important;
   box-shadow: var(--shadow);
+  border-color: var(--primary);
 }
 
 .header-cta:hover,
 .primary-button:hover {
   transform: translateY(-1px);
-  background: var(--primary-strong);
+  background-color: var(--primary-strong);
+  border-color: var(--primary-strong);
+  color: #ffffff !important;
 }
 
 .secondary-button {
-  background: var(--surface);
+  background-color: var(--surface);
   border: 1px solid var(--border);
   color: var(--text);
 }
 
 .secondary-button:hover {
-  background: var(--surface-soft);
+  background-color: var(--surface-soft);
 }
 
 .hero-section {
