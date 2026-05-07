@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   --background: #fbf8ff;
   --surface: #ffffff;
   --surface-soft: #f5f4ff;
@@ -79,9 +79,11 @@ img {
 .site-nav {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 28px;
   color: var(--text-muted);
   font-size: 14px;
+  flex: 1;
 }
 
 .site-nav a:hover,
@@ -101,6 +103,7 @@ img {
   padding: 0 18px;
   font-weight: 700;
   transition: 180ms ease;
+  text-align: center;
 }
 
 .header-cta,
@@ -133,7 +136,7 @@ img {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(340px, 520px);
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 500px);
   gap: 48px;
   align-items: center;
 }
@@ -180,7 +183,7 @@ img {
 .hero-copy h1 {
   margin: 0;
   max-width: 760px;
-  font-size: clamp(44px, 7vw, 72px);
+  font-size: clamp(40px, 6vw, 72px);
   line-height: 1.02;
   letter-spacing: -0.04em;
 }
@@ -212,13 +215,14 @@ img {
 .hero-logo-card {
   position: relative;
   width: 100%;
-  height: 500px;
+  min-height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid rgba(195, 197, 217, 0.3);
   border-radius: 18px;
   background: linear-gradient(180deg, #f4f3ff 0%, #eef1ff 100%);
+  overflow: hidden;
 }
 
 .hero-logo-card::before {
@@ -266,7 +270,7 @@ img {
 
 .section-heading h2 {
   margin: 0;
-  font-size: clamp(34px, 4vw, 48px);
+  font-size: clamp(30px, 4vw, 48px);
   line-height: 1.1;
 }
 
@@ -413,11 +417,6 @@ img {
   background: linear-gradient(90deg, rgba(0, 62, 199, 0.15) 0%, rgba(186, 26, 26, 0.15) 100%);
 }
 
-.steps-grid .step-card:first-child .step-line,
-.steps-grid .step-card:last-child .step-line {
-  opacity: 0.65;
-}
-
 .asset-card {
   padding: 24px 20px;
 }
@@ -432,7 +431,7 @@ img {
 
 .cta-card h2 {
   margin: 0;
-  font-size: clamp(30px, 4vw, 42px);
+  font-size: clamp(28px, 4vw, 42px);
 }
 
 .cta-card p {
@@ -519,12 +518,8 @@ img {
     grid-template-columns: 1fr;
   }
 
-  .hero-chart-card {
-    height: 360px;
-  }
-
   .hero-logo-card {
-    height: 360px;
+    min-height: 360px;
   }
 
   .step-line {
@@ -535,28 +530,52 @@ img {
 @media (max-width: 760px) {
   .site-header {
     height: auto;
-    padding: 14px 0;
+    padding: 12px 0;
   }
 
   .header-inner {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
+    gap: 14px;
+  }
+
+  .brand-link {
+    justify-content: center;
   }
 
   .site-nav {
+    width: 100%;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 12px 18px;
+    justify-content: center;
+    font-size: 13px;
   }
 
   .hero-section {
-    padding-top: 168px;
+    padding-top: 196px;
+  }
+
+  .hero-grid {
+    gap: 28px;
+  }
+
+  .hero-copy {
+    text-align: left;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(34px, 10vw, 42px);
+  }
+
+  .hero-copy p {
+    font-size: 16px;
   }
 
   .hero-actions,
   .footer-bottom,
   .footer-bottom > div {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
   }
 
   .primary-button,
@@ -565,11 +584,94 @@ img {
     width: 100%;
   }
 
-  .hero-copy h1 {
-    font-size: 42px;
+  .section {
+    padding: 72px 0;
+  }
+
+  .section-heading {
+    margin-bottom: 36px;
+  }
+
+  .info-card,
+  .ecosystem-card,
+  .asset-card,
+  .cta-card {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .hero-logo-card {
+    min-height: 280px;
   }
 
   .container {
     width: min(100% - 24px, 1180px);
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: min(100% - 20px, 1180px);
+  }
+
+  .site-nav {
+    gap: 10px 14px;
+  }
+
+  .hero-section {
+    padding-top: 214px;
+    padding-bottom: 56px;
+  }
+
+  .eyebrow-pill {
+    font-size: 10px;
+    padding: 7px 12px;
+  }
+
+  .hero-copy h1 {
+    font-size: 32px;
+  }
+
+  .hero-copy p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .header-cta,
+  .primary-button,
+  .secondary-button {
+    min-height: 44px;
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+
+  .hero-logo-card {
+    min-height: 220px;
+    border-radius: 14px;
+  }
+
+  .hero-logo {
+    width: min(84%, 240px);
+  }
+
+  .section-heading h2,
+  .cta-card h2 {
+    font-size: 28px;
+  }
+
+  .info-card h3,
+  .ecosystem-card h3,
+  .asset-card h3,
+  .step-card h3 {
+    font-size: 20px;
+  }
+
+  .partner-row {
+    gap: 12px;
+    font-size: 13px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
   }
 }

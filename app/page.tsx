@@ -1,13 +1,16 @@
+﻿const patientDownloadUrl = 'https://www.dropbox.com/scl/fi/ebxufqblsffwnfxua5rln/patient_app.apk?rlkey=4cty4bmly95iopj21f67vinm2&st=q7bkok72&dl=1';
+const mobileDownloadUrl = 'https://www.dropbox.com/scl/fi/hxafhdhv65je47cjcruth/mobile_app.apk?rlkey=0h3ma6njhwxq96spoi6kufduu&st=1q9b8icf&dl=1';
+
 export default function HomePage() {
   return (
     <main className="site-shell">
       <header className="site-header">
         <div className="container header-inner">
-          <a className="brand-link" href="#">
+          <a className="brand-link" href="#accueil" aria-label="Accueil AmbuLink">
             <img className="brand-logo" src="/logo.png" alt="AmbuLink" />
           </a>
 
-          <nav className="site-nav">
+          <nav className="site-nav" aria-label="Navigation principale">
             <a href="#solution">Solution</a>
             <a href="#ecosysteme">Écosystème</a>
             <a href="#fonctionnement">Fonctionnement</a>
@@ -20,33 +23,32 @@ export default function HomePage() {
         </div>
       </header>
 
-      <section className="hero-section">
+      <section className="hero-section" id="accueil">
         <div className="container hero-grid">
           <div className="hero-copy">
             <div className="eyebrow-pill">
               <span className="accent-dot" />
-              <span>Logistique d&apos;Urgence</span>
+              <span>Plateforme intelligente de logistique de santé</span>
             </div>
 
             <h1>
-              La plateforme de coordination logistique pour les{' '}
-              <span>secours d&apos;urgence</span>
+              Gérez. Optimisez. <span>Sauvez des vies.</span>
             </h1>
 
             <p>
-              Optimisez chaque intervention avec une synchronisation parfaite entre
-              patients, équipes de terrain et administrateurs. Réduisez les délais et
-              sauvez plus de vies.
+              AmbuLink aide les sociétés d&apos;ambulances privées à gérer leurs
+              missions, leur personnel, leur maintenance et leurs opérations en
+              temps réel avec une visibilité totale et une efficacité maximale.
             </p>
 
             <div className="hero-actions">
-              <a className="primary-button" href="/downloads/patient_app.apk" download>
+              <a className="primary-button" href={patientDownloadUrl}>
                 <span>↓</span>
-                Télécharger App Patient
+                Télécharger l&apos;app patient
               </a>
-              <a className="secondary-button" href="/downloads/mobile_app.apk" download>
-                <span>✚</span>
-                Télécharger App Mobile Pro
+              <a className="secondary-button" href={mobileDownloadUrl}>
+                <span>✓</span>
+                Télécharger l&apos;app mobile
               </a>
             </div>
           </div>
@@ -62,35 +64,35 @@ export default function HomePage() {
       <section className="section section-white" id="solution">
         <div className="container">
           <div className="section-heading centered">
-            <h2>La coordination au cœur de l&apos;urgence</h2>
+            <h2>Une solution tout-en-un pour les sociétés d&apos;ambulances</h2>
             <div className="heading-line" />
           </div>
 
           <div className="three-grid">
             <article className="info-card">
-              <div className="icon-box">⟳</div>
-              <h3>Réactivité Maximale</h3>
+              <div className="icon-box">⌁</div>
+              <h3>Dispatch intelligent</h3>
               <p>
-                Algorithmes d&apos;assignation intelligents pour une prise en charge en
-                moins de 3 minutes.
+                Répartition plus rapide des missions vers les bonnes équipes selon
+                la situation et la disponibilité.
               </p>
             </article>
 
             <article className="info-card">
-              <div className="icon-box">⇄</div>
-              <h3>Flux Synchronisé</h3>
+              <div className="icon-box">◉</div>
+              <h3>Suivi en temps réel</h3>
               <p>
-                Mise à jour en temps réel des états de mission entre le terrain et la
-                supervision centrale.
+                Visualisez les ambulances, les missions en cours et l&apos;avancement
+                des interventions en direct.
               </p>
             </article>
 
             <article className="info-card">
-              <div className="icon-box">▣</div>
-              <h3>Efficacité Opérationnelle</h3>
+              <div className="icon-box">!</div>
+              <h3>Alertes d&apos;urgence</h3>
               <p>
-                Analyse prédictive des besoins pour positionner vos flottes
-                stratégiquement.
+                Recevez rapidement les informations importantes pour mieux réagir
+                face aux urgences et événements critiques.
               </p>
             </article>
           </div>
@@ -100,10 +102,10 @@ export default function HomePage() {
       <section className="section section-soft" id="ecosysteme">
         <div className="container">
           <div className="section-heading centered">
-            <h2>Un écosystème, trois solutions</h2>
+            <h2>Un écosystème simple, utile et connecté</h2>
             <p>
-              Une synergie parfaite pour un flux d&apos;information ininterrompu du
-              signalement à l&apos;admission hospitalière.
+              Trois applications complémentaires pour relier le patient,
+              l&apos;ambulance et la clinique dans un même système de coordination.
             </p>
           </div>
 
@@ -113,26 +115,26 @@ export default function HomePage() {
               <div className="ecosystem-icon">⌖</div>
               <h3>Najda</h3>
               <p>
-                L&apos;application pour les patients. Elle permet de demander rapidement une
-                ambulance, partager sa position et suivre la prise en charge.
+                L&apos;application patient pour demander une ambulance, envoyer sa
+                position et suivre la mission jusqu&apos;à l&apos;arrivée du véhicule.
               </p>
               <ul>
-                <li>Demande simple et rapide</li>
-                <li>Suivi de la mission</li>
+                <li>Demande d&apos;ambulance rapide</li>
+                <li>Suivi en direct</li>
               </ul>
             </article>
 
             <article className="ecosystem-card ecosystem-card-featured">
               <div className="corner-glow" />
-              <div className="ecosystem-icon">✚</div>
+              <div className="ecosystem-icon">✓</div>
               <h3>AmbuLink Mobile</h3>
               <p>
-                L&apos;application des équipes de terrain. Elle aide les chauffeurs et les
-                managers à recevoir les missions et gérer les interventions.
+                L&apos;application des équipes terrain pour recevoir les missions,
+                suivre les véhicules et gérer les opérations quotidiennes.
               </p>
               <ul>
-                <li>Réception des missions</li>
-                <li>Gestion des ambulances</li>
+                <li>Gestion des missions</li>
+                <li>Suivi des ambulances</li>
               </ul>
             </article>
 
@@ -141,12 +143,12 @@ export default function HomePage() {
               <div className="ecosystem-icon">⌁</div>
               <h3>Clinic App</h3>
               <p>
-                L&apos;application des cliniques et des structures de santé. Elle permet
-                de suivre les demandes, organiser les missions et coordonner le service.
+                L&apos;application clinique pour suivre les demandes, coordonner les
+                équipes et préparer la prise en charge du patient.
               </p>
               <ul>
                 <li>Suivi des demandes</li>
-                <li>Coordination opérationnelle</li>
+                <li>Coordination clinique</li>
               </ul>
             </article>
           </div>
@@ -156,31 +158,36 @@ export default function HomePage() {
       <section className="section section-white" id="fonctionnement">
         <div className="container">
           <div className="section-heading centered">
-            <h2>Comment ça fonctionne</h2>
+            <h2>Comment AmbuLink fonctionne</h2>
           </div>
 
           <div className="steps-grid">
             <article className="step-card">
               <div className="step-number">1</div>
               <div className="step-line" />
-              <h3>Demande d&apos;aide</h3>
-              <p>Le patient signale une urgence via Najda avec sa position GPS précise.</p>
+              <h3>Le patient demande de l&apos;aide</h3>
+              <p>
+                La demande part depuis Najda avec les informations essentielles et
+                la localisation du patient.
+              </p>
             </article>
 
             <article className="step-card">
               <div className="step-number">2</div>
               <div className="step-line" />
-              <h3>Intervention terrain</h3>
+              <h3>L&apos;équipe reçoit la mission</h3>
               <p>
-                L&apos;équipe reçoit la mission sur AmbuLink Mobile et se prépare à intervenir.
+                AmbuLink Mobile transmet la mission, le suivi terrain et l&apos;état
+                de l&apos;intervention à l&apos;équipe concernée.
               </p>
             </article>
 
             <article className="step-card">
               <div className="step-number">3</div>
-              <h3>Supervision administrative</h3>
+              <h3>La clinique coordonne</h3>
               <p>
-                La clinique suit la demande dans Clinic App et coordonne la prise en charge.
+                Clinic App suit les demandes, organise les opérations et aide à
+                préparer l&apos;accueil du patient.
               </p>
             </article>
           </div>
@@ -191,27 +198,27 @@ export default function HomePage() {
         <div className="container">
           <div className="four-grid">
             <article className="asset-card">
-              <div className="asset-icon">◉</div>
-              <h3>Visibilité en temps réel</h3>
-              <p>Cartographie dynamique de chaque unité mobile.</p>
+              <div className="asset-icon">▣</div>
+              <h3>Gestion des missions</h3>
+              <p>Suivi complet des missions du début à la fin.</p>
             </article>
 
             <article className="asset-card">
               <div className="asset-icon">⋯</div>
-              <h3>Coordination multi-acteurs</h3>
-              <p>Interopérabilité totale avec les services publics.</p>
+              <h3>Gestion du personnel</h3>
+              <p>Suivi des équipes, des plannings et de l&apos;organisation interne.</p>
             </article>
 
             <article className="asset-card">
               <div className="asset-icon">⌘</div>
-              <h3>Gestion centralisée</h3>
-              <p>Une source unique de vérité pour vos données.</p>
+              <h3>Statistiques &amp; rapports</h3>
+              <p>Des tableaux de bord plus clairs pour piloter l&apos;activité.</p>
             </article>
 
             <article className="asset-card">
               <div className="asset-icon">△</div>
-              <h3>Architecture évolutive</h3>
-              <p>Cloud natif conçu pour la haute disponibilité.</p>
+              <h3>Maintenance de flotte</h3>
+              <p>Suivi des véhicules, des entretiens et des coûts de maintenance.</p>
             </article>
           </div>
         </div>
@@ -220,25 +227,25 @@ export default function HomePage() {
       <section className="section section-cta" id="contact">
         <div className="container">
           <div className="cta-card">
-            <h2>Prêt à transformer votre logistique médicale ?</h2>
+            <h2>Téléchargez AmbuLink et contactez-nous</h2>
             <p>
-              Rejoignez les services de secours qui ont déjà réduit leur temps
-              d&apos;intervention grâce à notre technologie de pointe.
+              Découvrez une solution conçue pour mieux gérer les missions,
+              optimiser les opérations et améliorer la coordination médicale.
             </p>
 
             <div className="hero-actions centered-actions">
-              <a className="primary-button" href="/downloads/patient_app.apk" download>
-                Télécharger App Patient
+              <a className="primary-button" href={patientDownloadUrl}>
+                Télécharger l&apos;app patient
               </a>
-              <a className="secondary-button" href="/downloads/mobile_app.apk" download>
-                Télécharger App Mobile Pro
+              <a className="secondary-button" href={mobileDownloadUrl}>
+                Télécharger l&apos;app mobile
               </a>
             </div>
 
             <div className="partner-row">
-              <span>HOSPITAL_PLUS</span>
-              <span>RESCUE_CORE</span>
-              <span>MEDI_SAFE</span>
+              <span>+216 53 51 48 83</span>
+              <span>ambulink.contact@gmail.com</span>
+              <span>Sfax, Tunisie</span>
             </div>
           </div>
         </div>
@@ -249,8 +256,8 @@ export default function HomePage() {
           <div className="footer-brand">
             <img className="footer-logo" src="/logo.png" alt="AmbuLink" />
             <p>
-              L&apos;excellence logistique au service de la vie. Plateforme de
-              coordination santé pensée pour des interventions plus rapides et plus sûres.
+              Plateforme intelligente de logistique de santé pour les sociétés
+              d&apos;ambulances privées.
             </p>
           </div>
 
@@ -258,28 +265,27 @@ export default function HomePage() {
             <h4>Produit</h4>
             <ul>
               <li>Najda Patient</li>
-              <li>App Mobile Pro</li>
+              <li>AmbuLink Mobile</li>
               <li>Clinic App</li>
               <li>Téléchargements</li>
             </ul>
           </div>
 
           <div>
-            <h4>Entreprise</h4>
+            <h4>Contact</h4>
             <ul>
-              <li>À propos</li>
-              <li>Contact</li>
-              <li>Support</li>
-              <li>Déploiement</li>
+              <li>+216 53 51 48 83</li>
+              <li>ambulink.contact@gmail.com</li>
+              <li>Sfax, Tunisie</li>
             </ul>
           </div>
         </div>
 
         <div className="container footer-bottom">
-          <span>© 2024 AmbuLink Systems. Tous droits réservés.</span>
+          <span>© 2026 AmbuLink Systems. Tous droits réservés.</span>
           <div>
-            <a href="#">Mentions légales</a>
-            <a href="#">Politique de confidentialité</a>
+            <a href="#contact">Contact</a>
+            <a href="#accueil">Retour en haut</a>
           </div>
         </div>
       </footer>
