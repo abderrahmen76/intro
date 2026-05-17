@@ -1,5 +1,5 @@
-const patientDownloadUrl = 'https://www.dropbox.com/scl/fi/nycjld7nz7mngq1pc72sz/patient_app.apk?rlkey=rp8bualbxg5yeknlbma0rgmbi&st=6dbvkbwt&dl=1';
-const mobileDownloadUrl = 'https://www.dropbox.com/scl/fi/wnt8kfpbr2uuuqte5ar06/mobile_app.apk?rlkey=wu2xd4pqgbdlxk02jl1e820qy&st=ty4kjkmc&dl=1';
+const patientDownloadUrl = 'https://www.dropbox.com/scl/fi/y3hulricxxy1hf55lc6qq/patient_app.apk?rlkey=nyhs58fyrmwieinakpy3m0swq&st=i5jsdnwj&dl=1';
+const mobileDownloadUrl = 'https://www.dropbox.com/scl/fi/993qxylisvrmaw125cqmn/mobile_app.apk?rlkey=krg8vw72vskntt3gqqclrq3hb&st=704bmkqj&dl=1';
 
 export default function HomePage() {
   return (
