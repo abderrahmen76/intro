@@ -1,5 +1,5 @@
-const patientDownloadUrl = 'https://www.dropbox.com/scl/fi/y3hulricxxy1hf55lc6qq/patient_app.apk?rlkey=nyhs58fyrmwieinakpy3m0swq&st=i5jsdnwj&dl=1';
-const mobileDownloadUrl = 'https://www.dropbox.com/scl/fi/993qxylisvrmaw125cqmn/mobile_app.apk?rlkey=krg8vw72vskntt3gqqclrq3hb&st=704bmkqj&dl=1';
+﻿const patientDownloadUrl = 'https://www.dropbox.com/scl/fi/iug2o25wx2cl0vpvmg776/patient_app.apk?rlkey=w91zuezq7735f13rxjp2g2jez&st=qalbm5lm&dl=1';
+const mobileDownloadUrl = 'https://www.dropbox.com/scl/fi/x8hwdxc68nixmb4thiqy7/mobile_app.apk?rlkey=mhczw5rcn8vdk0r56t7vpnlse&st=3z8mv78b&dl=1';
 
 export default function HomePage() {
   return (
@@ -50,7 +50,7 @@ export default function HomePage() {
                 Télécharger l&apos;app patient
               </a>
               <a className="secondary-button" href={mobileDownloadUrl}>
-                Télécharger l&apos;app mobile
+                Télécharger l&apos;app ambulance
               </a>
             </div>
           </div>
@@ -246,7 +246,7 @@ export default function HomePage() {
                 Télécharger l&apos;app patient
               </a>
               <a className="secondary-button" href={mobileDownloadUrl}>
-                Télécharger l&apos;app mobile
+                Télécharger l&apos;app ambulance
               </a>
             </div>
 
