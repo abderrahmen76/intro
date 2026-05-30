@@ -119,7 +119,7 @@ export default function HomePage() {
             <article className="ecosystem-card">
               <div className="corner-glow" />
               <div className="ecosystem-icon" aria-hidden="true">📱</div>
-              <h3>Najda</h3>
+              <h3>Ambulink</h3>
               <p>
                 L&apos;application patient pour demander une ambulance, envoyer sa
                 position et suivre la mission jusqu&apos;à l&apos;arrivée du véhicule.
